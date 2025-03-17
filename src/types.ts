@@ -6,3 +6,9 @@ export type NodeState = {
 };
 
 export type Value = 0 | 1 | "?";
+
+export type Message = {
+  type: "proposal" | "vote";
+  value: Value;
+  round: number;
+};
